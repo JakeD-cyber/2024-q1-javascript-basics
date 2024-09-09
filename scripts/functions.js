@@ -32,7 +32,9 @@ sayHi(firstName, 19);
 function add(a, b) {
     Let answer = a + b;
     return answer;
-}
+};
+
+runMyStuff("WillLuke", 28, sayHi);
 
 Let additionAnswer = add("2", 1);
 add(5000, 9873498739873);
@@ -44,10 +46,13 @@ Let runMyStuff = (x, y, f => {
     return answer;
 };
 
-function wearBarneyShirt(person) {
+let person = {
+
+function wearBarneyShirt(person) 
     person.IsWearingBarneyShirt = true;
     person.IsTotallyAwesome = true;
 }
+
 
 console.log(person);
 wearBarneyShirt(person);
