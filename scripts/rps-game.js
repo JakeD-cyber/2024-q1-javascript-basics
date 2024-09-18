@@ -1,12 +1,38 @@
 //@ts-check
 
-let playerControls = document.getElementById("player-controls");
-let btnRock = document.getElementById("btn-rock");
-let btnPaper = document.getElementById("btn-paper");
-let btnScissors = document.getElementById("btn-scissors");
+let playerControls = document.getElementById("player-controls") 
 
-function rockClicked(name) {
-    console.log("rock was selected");
+let weapons = [
+    {
+        type: "Rock",
+        beats: "Scissors"
+    },
+    {
+        type: "Paper",
+        beats: "Rock"
+    },
+    {
+        type: "Scissors",
+        beats: "Paper"
+    }
+];
+
+function pickRandomWeapon(weapons) {
+    let randy = Math.floor(Math.random() * weapons.length);
+    return weapons[randy];
+} 
+
+function playerControlHandler(e) {
+ if (playerWeapon.type === computer.Weapon.type) {
+     return "its a tie!";
+ }
 }
 
-btnRock?.addEventListener("click", rockClicked);
+
+
+function playerControlHandler(e) {
+    let weaponName = e.target.innerText;
+    console.log(weaponName, "was selected");
+}
+
+playerControls?.addEventListener("click", playerControlHandler);
