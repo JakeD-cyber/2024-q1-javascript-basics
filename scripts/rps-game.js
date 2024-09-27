@@ -19,7 +19,7 @@ gameResultHeader?.innerText = "Hey there!!";
 
 let isGameOver = false;
 
-let weapons = [
+let weapons = [g
     {
         type: "Rock",
         beats: "Scissors"
