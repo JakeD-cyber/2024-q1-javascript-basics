@@ -14,11 +14,11 @@ class Cheese {
 
 }
 
-       let cheddar = new Cheese("Cheddar");
-       let swiss = new Cheese("Swiss");
+       let cheddar = new Cheese("Milk");
+       let swiss = new Cheese("Butter");
        swiss.color = "white";
 
-let gouda = new Cheese("Gouda");
+let choclate = new Cheese("Choclate");
 
-gouda.eat();
-cheddar.eat();
+butter.eat();
+choclate.eat();
